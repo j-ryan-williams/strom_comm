@@ -1,3 +1,50 @@
+.App {
+  display: flex;
+}
+
+.Header-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85px;
+}
+
+.Logo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.Header-List {
+  font-size: 15px;
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.List {
+  font-size: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.Social-Container {
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+.Social-Icon {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
 #Logo-Img {
   width: 150px;
   height: 75px;
