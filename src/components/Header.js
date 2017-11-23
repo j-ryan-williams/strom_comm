@@ -1,30 +1,48 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import styled from 'styled-components';
+
 import Logo from '../images/SC-Logo.png';
+import HeaderWrapper from './styled/HeaderWrapper';
+
+const LogoContainer = styled.div`
+  padding-left: 10px;
+  width: 95px;
+  height: 55px;
+`
+const Img = styled.img`
+  width: inherit;
+  height: inherit;
+`
+const Nav = styled.div`
+  width: 50%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+`
+const List = styled.li`
+  padding-right: 40px;
+`
 
 class Header extends Component {
   render() {
     return(
-      <div className="Header-Container">
-        <div className="Logo">
-          <img id="Logo-Img" src={Logo} alt="" />
-        </div>
-        <div className="Header-List">
-          <ul>
-            <li className="List" id="About">About</li>
-            <li className="List" id="Contact">Contact</li>
-            <li className="List" id="Blog">Blog</li>
-          </ul>
-        </div>
-        <div className="Social-Container">
-          <p>twitter</p>
-          <p>facebook</p>
-          <p>instagram</p>
-        </div>
-      </div>
+      <HeaderWrapper>
+        <LogoContainer>
+          <Img src={Logo} alt="" />
+        </LogoContainer>
+        <Nav>
+          <List>About</List>
+          <List>Contact</List>
+          <List>Blog</List>
+        </Nav>
+      </HeaderWrapper>
     )
   }
 
 }
 
-export default Header
+export default Header;
