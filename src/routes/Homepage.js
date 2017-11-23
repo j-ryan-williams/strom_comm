@@ -2,20 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/Header';
 import styled from 'styled-components';
 
-const ImageBox = styled.div`
-  background: #134e5e;
-  background: -webkit-linear-gradient(to right, #134e5e, #71b280);
-  background: linear-gradient(to right, #134e5e, #71b280);
-  width: 100%;
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-const Welcome = styled.div`
-  font-family: Open Sans;
-  color: white;
-`
+import { ImageBox, Welcome } from '../components/styled/styles.js';
 
 class Homepage extends Component {
   render() {
@@ -24,7 +11,10 @@ class Homepage extends Component {
         <Header />
         <ImageBox>
           <Welcome>
-            <p>Welcome to Strom Comm</p>
+            <h1>Welcome to Strom Comm</h1>
+            <h3>We're passionate about helping companies connect
+            to potential customers</h3>
+            <p>Need a little help with marketing strategy and execution? You’re in the right place. We love finding ways for you to connect with potential clients, giving them the reasons to hire you. Let us strategize and develop your marketing plan so you can focus on what you do best. </p>
           </Welcome>
         </ImageBox>
       </div>

@@ -6,9 +6,9 @@ import Logo from '../images/SC-Logo.png';
 import HeaderWrapper from './styled/HeaderWrapper';
 
 const LogoContainer = styled.div`
-  padding-left: 10px;
-  width: 95px;
-  height: 55px;
+  padding-left: 120px;
+  width: 115px;
+  height: 65px;
 `
 const Img = styled.img`
   width: inherit;
@@ -17,14 +17,12 @@ const Img = styled.img`
 const Nav = styled.div`
   width: 50%;
   height: inherit;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   list-style-type: none;
   font-size: 20px;
-`
-const List = styled.li`
-  padding-right: 40px;
+  text-transform: uppercase;
 `
 
 class Header extends Component {
@@ -35,9 +33,9 @@ class Header extends Component {
           <Img src={Logo} alt="" />
         </LogoContainer>
         <Nav>
-          <List>About</List>
-          <List>Contact</List>
-          <List>Blog</List>
+          <p>About</p>
+          <p>Contact</p>
+          <p>Blog</p>
         </Nav>
       </HeaderWrapper>
     )
